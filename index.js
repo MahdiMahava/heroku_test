@@ -21,6 +21,20 @@ pg.connect(connection_string, function(err, client) {
 
 });
 
+
+
+app.get('/dbrequest', function(req, res) 
+{
+  //res.send("<h1> Hello Anton!!!! </h1>");
+  
+
+ 
+      res.send("Params = "+req);
+
+
+});
+
+
 app.listen(process.env.PORT || 3000, function() {
   console.log("listening on 3000");
 });
