@@ -4,8 +4,8 @@ app.get('/', function(req, res) {
   
   
   var pg = require('pg');
-
-pg.connect(process.env.DATABASE_URL, function(err, client) {
+  var connection_string = 'postgres://mxzuyoxrjiarxk:zDcbCqPyCmEW2gvbv0cKj_KQrW@ec2-54-204-39-67.compute-1.amazonaws.com:5432/d78eqo5u517mq';
+pg.connect(connection_string, function(err, client) {
   if (err) throw err;
   console.log('Connected to postgres! Getting schemas...');
 
