@@ -29,7 +29,7 @@ app.get('/dbrequest', function(req, res)
   
 
  
-      res.send("Params = "+req + "<hr/> originalUrl = " + req.originalUrl + " <hr/> params = " req.params);
+      res.send("Params = "+req + "<hr/> originalUrl = " + req.originalUrl + " <hr/> params = " req.params + "<hr/ baseUrl = >"+req.baseUrl + '<hr/> query = '+ req.query.q);
 
 
 });
