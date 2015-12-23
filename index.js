@@ -13,7 +13,7 @@ pg.connect(connection_string, function(err, client) {
     .query('SELECT table_schema,table_name FROM information_schema.tables;')
     .on('row', function(row) {
       console.log(JSON.stringify(row));
-      res.send("<h1> Hello Anton!!!! </h1><hr/>" + JSON.stringify(row));
+      res.send("<h1> Created By  </h1><hr/>" + JSON.stringify(row));
     });
 });
 
